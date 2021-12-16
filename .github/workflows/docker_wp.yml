@@ -13,7 +13,7 @@ jobs:
       - uses: actions/checkout@master
 
       - name: Create .env file
-        run: echo 'PORT=${{ secret.PORT }}' > .env
+        run: echo 'PORT=${{ secrets.PORT }}' > .env
 
       - name: Run Build
         run:  docker-compose -d
