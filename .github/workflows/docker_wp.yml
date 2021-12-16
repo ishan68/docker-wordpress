@@ -13,4 +13,6 @@ jobs:
 
       - name: Run Build
         run:  sudo docker-compose up -d
+              cp -r /home/ubuntu/actions-runner/_work/docker-wordpress/docker-wordpress/wp-admin /home/ubuntu/TEST/
+        
           
