@@ -15,6 +15,6 @@ jobs:
         run:  sudo docker-compose up -d
         
       - name: copy files
-              cp -r /home/ubuntu/actions-runner/_work/docker-wordpress/docker-wordpress/wp-admin /home/ubuntu/TEST/
+        run:  cp -r /home/ubuntu/actions-runner/_work/docker-wordpress/docker-wordpress/wp-admin /home/ubuntu/TEST/
         
           
