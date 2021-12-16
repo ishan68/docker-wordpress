@@ -1,22 +1,13 @@
-# This is a basic workflow to help you get started with Actions
-
 name: aws_deploy
 
 on:
   push:
     branches: [ master ]
-  pull_request:
-    branches: [ master ]
-
 jobs:
   Build: 
     runs-on: self-hosted
-
-
-
     steps:
       - uses: actions/checkout@master
-
       - name: Create .env file
         run: echo 'PORT=${{ secret.PORT }}' > .env
 
