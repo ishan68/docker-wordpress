@@ -16,5 +16,5 @@ jobs:
         run: echo 'PORT=${{ secrets.PORT }}' > .env
 
       - name: Run Build
-        run:  docker-compose -d
+        run:  docker-compose up -d
           
